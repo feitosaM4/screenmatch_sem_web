@@ -1,5 +1,5 @@
 package br.com.aluta.screenmatch.service;
 
-public interface IConverteDdos {
+public interface IConverteDados {
     <T> T obterDados(String json, Class <T> classe);
 }

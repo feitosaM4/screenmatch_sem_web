@@ -23,12 +23,12 @@ public class Episodio {
         } catch (NumberFormatException ex) {
             this.avaliacao = 0.0;
         }
+
         try {
             this.dataLancamento = LocalDate.parse(dadosEpisodio.dataLancamento());
-        }catch (DateTimeParseException ex) {
+        } catch (DateTimeParseException ex) {
             this.dataLancamento = null;
         }
-
     }
 
     public Integer getTemporada() {
@@ -77,6 +77,6 @@ public class Episodio {
                 ", titulo='" + titulo + '\'' +
                 ", numeroEpisodio=" + numeroEpisodio +
                 ", avaliacao=" + avaliacao +
-                ", dataLancamento=" + dataLancamento;
+                ", dataLancamento=" + dataLancamento ;
     }
 }
